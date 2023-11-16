@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LandingPage">
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/edtlebar"
@@ -13,26 +13,39 @@
         android:ems="10"
         android:hint="0"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="182dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
 
     <TextView
         android:id="@+id/txtPanjang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Panjang"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="100dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/txtLuas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Luas"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="280dp"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:text="Hasil"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -42,8 +55,12 @@
         android:ems="10"
         android:hint="0"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -51,8 +68,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lebar"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="184dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -60,8 +82,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hitung"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="328dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -69,8 +95,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Clear"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="328dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:fontFamily="serif-monospace"
+        android:text="Hitung Luas Persegi Panjang"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,5 @@
-package com.example.hitungluas;
+package com.example.myapplication;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -17,9 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout);
-
-        getSupportActionBar().setTitle("Hitung Luas Persegi Panjang");
+        setContentView(R.layout.activity_main);
 
         edtPanjang = (EditText) findViewById((R.id.edtPanjang));
         edtlebar = (EditText) findViewById((R.id.edtlebar));
@@ -33,20 +30,27 @@ public class MainActivity extends AppCompatActivity {
                 String panjang = edtPanjang.getText().toString().trim();
                 String lebar = edtlebar.getText().toString().trim();
 
-                double p = Double.parseDouble(panjang);
-                double l = Double.parseDouble(lebar);
-                double luas = p*l;
+                if (edtPanjang.getText().toString().length() == 0) {
+                    edtPanjang.setError("Masukkan Nilai Panjang!");
+                } else if (edtlebar.getText().toString().length() == 0) {
+                    edtlebar.setError("Masukkan Nilai Lebar!");
+                } else {
+                    double p = Double.parseDouble(panjang);
+                    double l = Double.parseDouble(lebar);
+                    double luas = p * l;
 
-                txtLuas.setText("Luas : "+luas);
+                    txtLuas.setText("Luas : "+luas);
+                }
             }
         });
 
         btnClr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                edtPanjang.setText(0);
-                edtlebar.setText(0);
-                txtLuas.setText(0);
+                edtPanjang.setText("");
+                edtlebar.setText("");
+                txtLuas.setText("");
+                edtPanjang.requestFocus();
             }
         });
     }
