@@ -3,7 +3,7 @@
 2. <a href="https://github.com/fajrinam/mobile-programming/tree/main/aplikasiPenjualan">Aplikasi Penjualan</a></n>
 3. <a href="https://github.com/fajrinam/mobile-programming/tree/main/kalkulator">Kalkulator</a></n>
 4. <a href="https://github.com/fajrinam/mobile-programming/tree/main/formPenilaian">Form Penilaian</a></n>
-5. <a href="https://github.com/fajrinam/mobile-programming/tree/main/formMahasiswa"></a>SQLite</n>
-6. <a href="https://github.com/fajrinam/mobile-programming/tree/main/formMahasiswa"></a>Dialog</n>
-7. <a href="https://github.com/fajrinam/mobile-programming/tree/main/formMahasiswa"></a>ListView</n>
-12. <a href="https://github.com/fajrinam/mobile-programming/tree/main/JsonParser"></a>JSON Parser</n>
+5. <a href="https://github.com/fajrinam/mobile-programming/tree/main/formMahasiswa">SQLite</a></n>
+6. <a href="https://github.com/fajrinam/mobile-programming/tree/main/formMahasiswa">Dialog</a></n>
+7. <a href="https://github.com/fajrinam/mobile-programming/tree/main/formMahasiswa">ListView</a></n>
+12. <a href="https://github.com/fajrinam/mobile-programming/tree/main/JsonParser">JSON Parser</a></n>
